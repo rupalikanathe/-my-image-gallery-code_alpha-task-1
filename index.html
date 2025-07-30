@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore My Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🌟 Explore My Gallery</h1>
+            <p>Discover Amazing Images from Different Categories - 36 Beautiful Photos</p>
+        </div>
+
+        <!-- Filter Buttons -->
+        <div class="filter-container">
+            <button class="filter-btn active" data-filter="all">All (36)</button>
+            <button class="filter-btn" data-filter="animals">🦁 Animals (6)</button>
+            <button class="filter-btn" data-filter="forest">🌲 Forest (6)</button>
+            <button class="filter-btn" data-filter="city">🏙️ City (6)</button>
+            <button class="filter-btn" data-filter="space">🚀 Space (6)</button>
+            <button class="filter-btn" data-filter="sunset">🌅 Sunset Beach (6)</button>
+            <button class="filter-btn" data-filter="birds">🦅 Birds (6)</button>
+        </div>
+
+        <!-- Image Gallery -->
+        <div class="gallery" id="gallery">
+            <!-- Animals Images (6) -->
+            <div class="gallery-item" data-category="animals" data-title="Lion Boss" data-description="Powerful lion showing dominance in the wild">
+                <img src="https://imgs.search.brave.com/87xEGW2URDGOdkq5l53flB1z6Xln5ipwxJSbPwL3nXg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvNDgw/NTg1NDY1L3Bob3Rv/L3doby1pcy10aGUt/Ym9zcy5qcGc_cz02/MTJ4NjEyJnc9MCZr/PTIwJmM9NkhHTXhL/TE9aV0ptd0RFRjBH/YjE2QzBCY25NbVk3/YnZBeTNOS21yT1c2/QT0" alt="Lion Boss">
+                <div class="overlay">
+                    <h3>Lion Boss</h3>
+                    <p>Animals</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="animals" data-title="Monkey with Celery" data-description="Cute monkey holding celery in green environment">
+                <img src="https://imgs.search.brave.com/PJo33Lbd5YDb3Vf58v1Dui0VayFEUj6H3RaBKif5Las/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wNTQv/MjA3Lzk4MC9zbWFs/bC9hLW1vbmtleS1o/b2xkaW5nLWNlbGVy/eS1pbi1hLWx1c2gt/Z3JlZW4tZW52aXJv/bm1lbnQtc2hvd2Nh/c2luZy1hbmltYWwt/YmVoYXZpb3ItYW5k/LWRpZXQtcGhvdG8u/anBn" alt="Monkey with Celery">
+                <div class="overlay">
+                    <h3>Monkey with Celery</h3>
+                    <p>Animals</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="animals" data-title="Cute Squirrel" data-description="Adorable squirrel in natural habitat">
+                <img src="https://imgs.search.brave.com/Qs2X5Hge2bj63WQADwYgeLePOtKNohUD_TM8f0TcgpI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMucGV4ZWxzLmNv/bS9waG90b3MvNDc1/NDcvc3F1aXJyZWwt/YW5pbWFsLWN1dGUt/cm9kZW50cy00NzU0/Ny5qcGVnP2F1dG89/Y29tcHJlc3MmY3M9/dGlueXNyZ2ImZHBy/PTEmdz01MDA" alt="Cute Squirrel">
+                <div class="overlay">
+                    <h3>Cute Squirrel</h3>
+                    <p>Animals</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="animals" data-title="Wild Fox" data-description="Beautiful wild fox in natural environment">
+                <img src="https://imgs.search.brave.com/NhdbqfBxbvuPSLFQXitieaYVukJLXbW41dVHplBgVaA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMucGV4ZWxzLmNv/bS9waG90b3MvMzcy/MTY2L3BleGVscy1w/aG90by0zNzIxNjYu/anBlZz9hdXRvPWNv/bXByZXNzJmNzPXRp/bnlzcmdiJmRwcj0x/Jnc9NTAw" alt="Wild Fox">
+                <div class="overlay">
+                    <h3>Wild Fox</h3>
+                    <p>Animals</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="animals" data-title="Sleeping Panda" data-description="Adorable sleeping giant panda baby">
+                <img src="https://imgs.search.brave.com/h4y224h4XPZ0vjw6g7x1E2MhtjYL3YyH1je2aikc6mk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvNDc1/Nzc2MDk5L3Bob3Rv/L3NsZWVwaW5nLWdp/YW50LXBhbmRhLWJh/YnkuanBnP3M9NjEy/eDYxMiZ3PTAmaz0y/MCZjPUFrTkZEU01S/RE5hNnVVbHJoc3p1/bnFkMTlLMUZQQ1Yz/bHYzbTJPQW1IbGM9" alt="Sleeping Panda">
+                <div class="overlay">
+                    <h3>Sleeping Panda</h3>
+                    <p>Animals</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="animals" data-title="Elephant Portrait" data-description="Majestic elephant close-up portrait">
+                <img src="https://imgs.search.brave.com/nr6iI1T4B-K8nWC2_qPeDNrJe05_JSW-9ZXz9S6Q1W0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jMDIu/cHVycGxlZHNodWIu/Y29tL3VwbG9hZHMv/c2l0ZXMvNjIvMjAx/OS8wMy8zNjIzMF9l/cDEwMl8wMDQtMGJi/M2Y3Ny5qcGc_d2Vi/cD0xJnc9MTIwMA" alt="Elephant Portrait">
+                <div class="overlay">
+                    <h3>Elephant Portrait</h3>
+                    <p>Animals</p>
+                </div>
+            </div>
+
+            <!-- Forest Images (6) -->
+            <div class="gallery-item" data-category="forest" data-title="Deep Forest Stream" data-description="Crystal clear water stream in deep forest">
+                <img src="https://imgs.search.brave.com/3EKbN0OLtNBMzKp2-gwyyc2Vx8g161_jup6fHXZaBzo/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90aHVt/YnMuZHJlYW1zdGlt/ZS5jb20vYi9kZWVw/LWZvcmVzdC1zdHJl/YW0tY3J5c3RhbC1j/bGVhci13YXRlci1z/dW5zaGluZS1wbGl0/dmljZS1sYWtlcy1j/cm9hdGlhLTQxNjQ1/NTkyLmpwZw" alt="Deep Forest Stream">
+                <div class="overlay">
+                    <h3>Deep Forest Stream</h3>
+                    <p>Forest</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="forest" data-title="Coniferous Taiga" data-description="Subalpine coniferous taiga in Siberian mountains">
+                <img src="https://imgs.search.brave.com/KD2CQ8KclpYttEkSBUIbnNvRkGSCgFcjU68acuzX-SI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4u/YnJpdGFubmljYS5j/b20vNzQvMjQ4NTc0/LTAwNC1DNUE0MjhG/Qy9TdWJhbHBpbmUt/Y29uaWZlcm91cy10/YWlnYS1pbi1TaWJl/cmlhbi1tb3VudGFp/bnMuanBn" alt="Coniferous Taiga">
+                <div class="overlay">
+                    <h3>Coniferous Taiga</h3>
+                    <p>Forest</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="forest" data-title="Mountain Creek" data-description="Freshwater mountain creek flowing through forest">
+                <img src="https://imgs.search.brave.com/XzOtrX4bseV5wmMor8YNizKgWjTQuyAtyQAq8FFiqvM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9idXJz/dC5zaG9waWZ5Y2Ru/LmNvbS9waG90b3Mv/ZnJlc2h3YXRlci1t/b3VudGFpbi1jcmVl/ay5qcGc_d2lkdGg9/MTAwMCZmb3JtYXQ9/cGpwZyZleGlmPTAm/aXB0Yz0w" alt="Mountain Creek">
+                <div class="overlay">
+                    <h3>Mountain Creek</h3>
+                    <p>Forest</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="forest" data-title="Forest Waterfall" data-description="Beautiful waterfall in deep forest">
+                <img src="https://imgs.search.brave.com/oqZHxrvHhkhZ_Z6hdwmavue565LduPhrSgYH7nNYZco/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTE5/ODg5OTM4L3Bob3Rv/L3dhdGVyZmFsbC1p/bi1kZWVwLWZvcmVz/dC5qcGc_cz02MTJ4/NjEyJnc9MCZrPTIw/JmM9MVQ2TENRTjNy/OV95WEljUWdabnlS/RG5XY01HcUJFMUlI/VkEtRzk0LUlORT0" alt="Forest Waterfall">
+                <div class="overlay">
+                    <h3>Forest Waterfall</h3>
+                    <p>Forest</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="forest" data-title="Misty Forest Path" data-description="Mysterious forest path with morning mist">
+                <img src="https://imgs.search.brave.com/dnr3UyYqFH9Z5gKEp2So5rEWLsclGHsVvQ4EUCxTGZA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzL2FkL2E1/L2ViL2FkYTVlYmI1/YWYwMTRmMmM0MDNm/MmQ0YjBjMjlkYmUy/LmpwZw" alt="Misty Forest Path">
+                <div class="overlay">
+                    <h3>Misty Forest Path</h3>
+                    <p>Forest</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="forest" data-title="Dense Green Forest" data-description="Lush dense green forest with tall trees">
+                <img src="https://imgs.search.brave.com/jyp3g9vXIFRunq7-OfwLGqUdyvcNE0bXH9E4jloH0p0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzAyLzkxLzA5LzYx/LzM2MF9GXzI5MTA5/NjExNV9kMkxCZDFu/RktnZ0dLbXZsaWRP/NE9oTXVLdlR5ZURy/OC5qcGc" alt="Dense Green Forest">
+                <div class="overlay">
+                    <h3>Dense Green Forest</h3>
+                    <p>Forest</p>
+                </div>
+            </div>
+
+            <!-- City Images (6) -->
+            <div class="gallery-item" data-category="city" data-title="Mumbai Skyline" data-description="Vashi New Mumbai modern skyline">
+                <img src="https://imgs.search.brave.com/pa_5tFZbAO08GBl4XrdJtgPEhQkZ_FXEb3HTfE7LPRE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTg3/NTY1NDc5L3Bob3Rv/L3Zhc2hpLW5ldy1t/dW1iYWkuanBnP3M9/NjEyeDYxMiZ3PTAm/az0yMCZjPWNTcXBY/aWpJSHd5cUJpbmFL/U0JaLVVjRjlXX3la/T1pvckZTWmNSaXYw/S0k9" alt="Mumbai Skyline">
+                <div class="overlay">
+                    <h3>Mumbai Skyline</h3>
+                    <p>City</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="city" data-title="Modern Real Estate" data-description="Modern real estate buildings and architecture">
+                <img src="https://imgs.search.brave.com/GVZuSkD3L_ktRA5ZYnVhvWO54JFBL1SrD25qzpVkeNk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvNDg4/MTIwMTM5L3Bob3Rv/L21vZGVybi1yZWFs/LWVzdGF0ZS5qcGc_/cz02MTJ4NjEyJnc9/MCZrPTIwJmM9ODhq/azFWTFNvWWJvTW1M/VXgxNzNzSHNfWHJa/OXBIMjFhczhsQzdX/SU5Rcz0" alt="Modern Real Estate">
+                <div class="overlay">
+                    <h3>Modern Real Estate</h3>
+                    <p>City</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="city" data-title="Palace of Winds" data-description="Palace of Winds in Jaipur India">
+                <img src="https://imgs.search.brave.com/pIT-jN1YwXgA_9CsZh_DxcqNMakskAbEA_qgWXN81M0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTA3/OTU2OTQ4Mi9waG90/by9wYWxhY2Utb2Yt/d2luZHMtaW4tamFp/cHVyLWluZGlhLmpw/Zz9zPTYxMng2MTIm/dz0wJms9MjAmYz1U/QUtZWlRMbGh2Y0RC/MzRTZ2htWDhIZVRP/eVhoZ1FhU0J3OEhQ/WFhNM0k0PQ" alt="Palace of Winds">
+                <div class="overlay">
+                    <h3>Palace of Winds</h3>
+                    <p>City</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="city" data-title="Manhattan Bridge" data-description="Manhattan Bridge in New York City">
+                <img src="https://imgs.search.brave.com/o-3_8QfpvpYtK2miu54PFgj7u88omuN4UaADgECJ54A/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvNTI5/MTE5NDI0L3Bob3Rv/L21hbmhhdHRhbi1i/cmlkZ2UtaW4tbmV3/LXlvcmsuanBnP3M9/NjEyeDYxMiZ3PTAm/az0yMCZjPTlidzZY/ZE5VWTd1NlZZbzBy/M0F2LTM3ZHhBRHNZ/T29acmw1Smx4S3Jw/ZUk9" alt="Manhattan Bridge">
+                <div class="overlay">
+                    <h3>Manhattan Bridge</h3>
+                    <p>City</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="city" data-title="Kolkata Bridge" data-description="Jagannath Ghat of Kolkata near Howrah Bridge">
+                <img src="https://imgs.search.brave.com/St1aq8T9g2aev7cST8woebd6E0HS6PnLls5aiQOMJ3I/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTI0/MjM4MTE2Mi9waG90/by9sb2NhbC1wZW9w/bGUtYXJlLXRha2lu/Zy1waWN0dXJlcy1m/cm9tLXRoZS1qYWdh/bm5hdGgtZ2hhdC1v/Zi1rb2xrYXRhLW5l/YXItdGhlLWhvd3Jh/aC1icmlkZ2UuanBn/P3M9NjEyeDYxMiZ3/PTAmaz0yMCZjPVJE/WDg4eEYyMkNsV2la/cDFYRjNoaGIzOVh1/UURicGpicm95SjVk/M2hPZ2c9" alt="Kolkata Bridge">
+                <div class="overlay">
+                    <h3>Kolkata Bridge</h3>
+                    <p>City</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="city" data-title="Vibrant City Sunset" data-description="Vibrant city sunset with beautiful colors">
+                <img src="https://imgs.search.brave.com/gwOAlH_pluHEF1NGGyZiSdZH4xI_ahB5CalOqH8HcPY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuZnJlZWltYWdl/cy5jb20vaW1hZ2Vz/L2xhcmdlLXByZXZp/ZXdzLzQwYS92aWJy/YW50LWNpdHktc3Vu/c2V0LTA0MTAtNTY5/ODY2MC5qcGc_Zm10" alt="Vibrant City Sunset">
+                <div class="overlay">
+                    <h3>Vibrant City Sunset</h3>
+                    <p>City</p>
+                </div>
+            </div>
+
+            <!-- Space Images (6) -->
+            <div class="gallery-item" data-category="space" data-title="Galaxy Nebula" data-description="Beautiful galaxy nebula in deep space">
+                <img src="https://imgs.search.brave.com/EJHsw8bupgtcJpGYkFjVjusORPXWAcF6CKA7sjqB9so/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pLnBp/bmltZy5jb20vb3Jp/Z2luYWxzLzJlLzk4/L2JmLzJlOThiZmY2/ZjlmYzg2NGYxNDM5/ZmZhMTFiZDg5ZTkw/LmpwZw" alt="Galaxy Nebula">
+                <div class="overlay">
+                    <h3>Galaxy Nebula</h3>
+                    <p>Space</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="space" data-title="Space Planet" data-description="Mysterious planet in outer space">
+                <img src="https://imgs.search.brave.com/yfgCiasscGRHfP9-JfmnqsYiCcwQMET0oRMJnpuX8D8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzEyLzQxLzUyLzg4/LzM2MF9GXzEyNDE1/Mjg4NjJfandEMnk3/eWxHQmFvdFVlajRQ/anhQUFk5Z3l4NlFu/VEguanBn" alt="Space Planet">
+                <div class="overlay">
+                    <h3>Space Planet</h3>
+                    <p>Space</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="space" data-title="Cosmic Universe" data-description="Cosmic universe with stars and galaxies">
+                <img src="https://imgs.search.brave.com/7GCjrNuO7Mo5F8fMVx4OS2LFNzLa4KAfNAXwJYYaPRI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzEzLzEyLzAyLzQ2/LzM2MF9GXzEzMTIw/MjQ2MDBfZTVITEVl/MDcyS3NXWk1OZE8z/QXdaUWNaTjlUTUZm/ZjcuanBn" alt="Cosmic Universe">
+                <div class="overlay">
+                    <h3>Cosmic Universe</h3>
+                    <p>Space</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="space" data-title="Astronaut Mission" data-description="Astronaut on space mission with gravity elements">
+                <img src="https://imgs.search.brave.com/wpDush9TbrBpMXByLvxDqWR8bmj9NyCHaw9fvylcd88/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90aHVt/YnMuZHJlYW1zdGlt/ZS5jb20vYi9hc3Ry/b25hdXQtZ3Jhdml0/eS1lbGVtZW50cy1p/bWFnZS1mdXJuaXNo/ZWQtbmFzYS1hc3Ry/b25hdXQtc3BhY2Ut/bWlzc2lvbi0xMDI2/NjYyNjQuanBn" alt="Astronaut Mission">
+                <div class="overlay">
+                    <h3>Astronaut Mission</h3>
+                    <p>Space</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="space" data-title="Moon on Cloudy Day" data-description="Beautiful moon visible on cloudy day">
+                <img src="https://imgs.search.brave.com/SfVKCQMS2juMOX5BZxHr8JUFr_2kUpqJzMALNYcpJRc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTYw/NDIxNzM4L3Bob3Rv/L21vb24tb24tY2xv/dWR5LWRheS5qcGc_/cz02MTJ4NjEyJnc9/MCZrPTIwJmM9V29z/LV81TnI1YU04OTRt/bVVLazFOa0N4SDBn/cjVhLS1rdkVHZHJY/d1NEbz0" alt="Moon on Cloudy Day">
+                <div class="overlay">
+                    <h3>Moon on Cloudy Day</h3>
+                    <p>Space</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="space" data-title="Solar System" data-description="Beautiful view of solar system planets">
+                <img src="https://imgs.search.brave.com/nmXx2jevGYx09_Kp7isrHX4njoAJ9dJfpEKgSjrl1h4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzAzLzc2LzQyLzcy/LzM2MF9GXzM3NjQy/NzIxNV9aWjhvU3JW/a2taa2lqU2tLaTRq/b1AwNVZicm1lTERD/ay5qcGc" alt="Solar System">
+                <div class="overlay">
+                    <h3>Solar System</h3>
+                    <p>Space</p>
+                </div>
+            </div>
+
+            <!-- Sunset Beach Images (6) -->
+            <div class="gallery-item" data-category="sunset" data-title="Golden Tropical Sunset" data-description="Golden sunset on tropical beach with palm trees">
+                <img src="https://imgs.search.brave.com/zynMubR9m_PM1sKRq4chD7mGdZjQ-_gpCjIhWL4qL_U/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/ZnJlZS1waG90by9n/b2xkZW4tc3Vuc2V0/LXRyb3BpY2FsLWJl/YWNoLXdpdGgtcGFs/bS10cmVlc185OTc1/LTMyODgwLmpwZz9z/ZW10PWFpc19oeWJy/aWQmdz03NDA" alt="Golden Tropical Sunset">
+                <div class="overlay">
+                    <h3>Golden Tropical Sunset</h3>
+                    <p>Sunset Beach</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="sunset" data-title="Ocean Beach Fishing Pier" data-description="Ocean beach with fishing pier at sunset">
+                <img src="https://imgs.search.brave.com/LTfR7Uri8lFoNiM_BJlqyzZm5Dm08iBZtjqr8ACsTlo/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9vY2Vh/bmJlYWNoc2FuZGll/Z28uY29tL3NpdGVz/L2RlZmF1bHQvZmls/ZXMvc3R5bGVzLzc2/OHg3NjgvcHVibGlj/L2Q3L3Bob3Rvcy9v/Y2Vhbi1iZWFjaC1m/aXNoaW5nLXBpZXIt/MjcuanBnP2l0b2s9/RGRCWTRfcXU" alt="Ocean Beach Fishing Pier">
+                <div class="overlay">
+                    <h3>Ocean Beach Fishing Pier</h3>
+                    <p>Sunset Beach</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="sunset" data-title="California Sunset Beach" data-description="Southern California sunset beach with backlit palm trees">
+                <img src="https://imgs.search.brave.com/Zoe3zppsdvitxdDe8f0Pj9U-bKqXsSr7YDX-sxU6ol0/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvNTEz/Njk0MDI2L3Bob3Rv/L3NvdXRoZXJuLWNh/bGlmb3JuaWEtc3Vu/c2V0LWJlYWNoLXdp/dGgtYmFja2xpdC1w/YWxtLXRyZWVzLmpw/Zz9zPTYxMng2MTIm/dz0wJms9MjAmYz1k/Z1B3Mm1Tb0txdk5Z/cjdrZUM3bWk4TmN2/cWJWdzd2WU14R2hq/Q1hMcndvPQ" alt="California Sunset Beach">
+                <div class="overlay">
+                    <h3>California Sunset Beach</h3>
+                    <p>Sunset Beach</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="sunset" data-title="Rocky Beach Sunset" data-description="Ocean water splash on rocky beach with beautiful sunset">
+                <img src="https://imgs.search.brave.com/h7JI6Uqi_hAHqLCwOpvchz1TvRDFIuHxdY6daZmxJWM/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wMDcv/NzczLzg4OS9zbWFs/bC9vY2Vhbi13YXRl/ci1zcGxhc2gtb24t/cm9jay1iZWFjaC13/aXRoLWJlYXV0aWZ1/bC1zdW5zZXQtc2t5/LWFuZC1jbG91ZHMt/c2VhLXdhdmUtc3Bs/YXNoaW5nLW9uLXN0/b25lLWF0LXNlYS1z/aG9yZS1vbi1zdW1t/ZXItbmF0dXJlLWxh/bmRzY2FwZS10cm9w/aWNhbC1wYXJhZGlz/ZS1iZWFjaC1hdC1z/dW5zZXQtcm9jay1i/ZWFjaC1hdC1jb2Fz/dC1mcmVlLXBob3Rv/LmpwZw" alt="Rocky Beach Sunset">
+                <div class="overlay">
+                    <h3>Rocky Beach Sunset</h3>
+                    <p>Sunset Beach</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="sunset" data-title="Serene Beach Waves" data-description="Serene beach with crashing waves and colorful sunset">
+                <img src="https://imgs.search.brave.com/z2O3MkIDYANVADL-S6lZOwNk2oqa1Cus3EAIJUgxgRo/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wNDQv/NTE0LzQ4OS9zbWFs/bC9iYWNrZ3JvdW5k/LWEtc2VyZW5lLWJl/YWNoLXdpdGgtY3Jh/c2hpbmctd2F2ZXMt/YW5kLWEtY29sb3Jm/dWwtc3Vuc2V0LXBo/b3RvLmpwZw" alt="Serene Beach Waves">
+                <div class="overlay">
+                    <h3>Serene Beach Waves</h3>
+                    <p>Sunset Beach</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="sunset" data-title="Paradise Beach Sunset" data-description="Paradise beach sunset with beautiful colors">
+                <img src="https://imgs.search.brave.com/LKwcoCCKQxs0-r3eyN6zjkjJA6qMg-Vd5DEN0sBOxAc/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/NzF2dHJ5bWowRkwu/anBn" alt="Paradise Beach Sunset">
+                <div class="overlay">
+                    <h3>Paradise Beach Sunset</h3>
+                    <p>Sunset Beach</p>
+                </div>
+            </div>
+
+            <!-- Birds Images (6) -->
+            <div class="gallery-item" data-category="birds" data-title="Eastern Bluebirds" data-description="Eastern bluebirds male and female pair">
+                <img src="https://imgs.search.brave.com/-9O0NsmtutZyZczVOP3LavQz26N5POP6BoGNC814x48/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTgz/NDEyNDY2L3Bob3Rv/L2Vhc3Rlcm4tYmx1/ZWJpcmRzLW1hbGUt/YW5kLWZlbWFsZS5q/cGc_cz02MTJ4NjEy/Jnc9MCZrPTIwJmM9/Nl9FUUhuR2Vkd2Rq/TTlRVFVGMmMxY2U3/Y0MzWHRseHZNUHBV/NUhBb3VoYz0" alt="Eastern Bluebirds">
+                <div class="overlay">
+                    <h3>Eastern Bluebirds</h3>
+                    <p>Birds</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="birds" data-title="Green Parrots" data-description="Two green parrot birds sitting patiently on tree at sunset">
+                <img src="https://imgs.search.brave.com/UIV2fOFR8T-OLm59bASgF7fIiDVz2HULV-RsNstp3Eo/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/cHJlbWl1bS1waG90/by90d28tZ3JlZW4t/cGFycm90LWJpcmRz/LXNpdC1wYXRpZW50/bHktdGhlaXItdHJl/ZS1zdW5zZXQtdGlt/ZV8xMTEyMzI5LTE0/MjU1My5qcGc_c2Vt/dD1haXNfaHlicmlk/Jnc9NzQw" alt="Green Parrots">
+                <div class="overlay">
+                    <h3>Green Parrots</h3>
+                    <p>Birds</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="birds" data-title="Eagle in Flight" data-description="Majestic eagle soaring through the sky">
+                <img src="https://imgs.search.brave.com/cerXIM2wpy9vlPITYG_3L7eUcsNcB_qh7MYthQQUJL4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9lYWds/ZXdpbmd0b3Vycy5j/b20vd3AtY29udGVu/dC91cGxvYWRzLzIw/MjUvMDQvMzM3OTgx/ODYzMzJfYTJhNGE1/ZjM4Ml9TUlMtd2Vi/LTEwMjR4NTg1Lndl/YnA" alt="Eagle in Flight">
+                <div class="overlay">
+                    <h3>Eagle in Flight</h3>
+                    <p>Birds</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="birds" data-title="Pigeon Natural" data-description="Pigeon in natural environment">
+                <img src="https://imgs.search.brave.com/HDrNVs4ZKG3d5UZACw63pE3-nQN9xkQMCdzJV5ZxA-Q/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/ZnJlZS1waG90by9w/aWdlb24tbmF0dXJh/bC1lbnZpcm9ubWVu/dF8yMy0yMTUxNDM5/MzQ2LmpwZz9zZW10/PWFpc19oeWJyaWQm/dz03NDA" alt="Pigeon Natural">
+                <div class="overlay">
+                    <h3>Pigeon Natural</h3>
+                    <p>Birds</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="birds" data-title="Beautiful Peacock" data-description="Beautiful peacock displaying colorful feathers">
+                <img src="https://imgs.search.brave.com/EdG99K8tyh9fwHCNqbV7zAsRb8vb3Jwso9rYyrR4ino/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5pc3RvY2twaG90/by5jb20vaWQvMTgw/Njk5MzU4L3Bob3Rv/L3BlYWNvY2suanBn/P2I9MSZzPTYxMng2/MTImdz0wJms9MjAm/Yz1qbHRkQ0hCWHBs/NDlkX213X3g4TG4w/VkdJVmMyU2xLT0Zy/S1RSd2ZPY3d3PQ" alt="Beautiful Peacock">
+                <div class="overlay">
+                    <h3>Beautiful Peacock</h3>
+                    <p>Birds</p>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="birds" data-title="Common Kingfisher" data-description="Common kingfisher wetlands bird with colored feathers">
+                <img src="https://imgs.search.brave.com/8Cg7c0X45aeud5z0l_gsTQ9c0zKjnDh2g6tYtzLXUA4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wMzIv/NDE5LzE3Ny9zbWFs/bC90aGUtY29tbW9u/LWtpbmdmaXNoZXIt/d2V0bGFuZHMtYmly/ZC1jb2xvcmVkLWZl/YXRoZXJzLWZyb20t/ZGlmZmVyZW50LWJp/cmRzLWdlbmVyYXRp/dmUtYWktZnJlZS1w/aG90by5qcGc" alt="Common Kingfisher">
+                <div class="overlay">
+                    <h3>Common Kingfisher</h3>
+                    <p>Birds</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox" id="lightbox">
+        <div class="lightbox-content">
+            <img id="lightbox-img" src="/placeholder.svg" alt="">
+            <div class="lightbox-info">
+                <h3 id="lightbox-title"></h3>
+                <p id="lightbox-description"></p>
+            </div>
+        </div>
+        <div class="image-counter" id="image-counter">1 / 36</div>
+        <button class="nav-btn prev-btn" id="prev-btn">‹</button>
+        <button class="nav-btn next-btn" id="next-btn">›</button>
+        <button class="close-btn" id="close-btn">×</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
